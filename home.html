@@ -12,12 +12,15 @@
         <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/custom.css">
         <link rel="stylesheet" type="text/css" href="fontawesome-free-5.11.2-web/css/all.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-         <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="jquery.js"></script>
           
           <script type="text/javascript">
            $("document").ready(function() {
            $("#far").click(function(){
            $("#far").css({"background-color":"white", "margin-top":"200px" , "border":"10px solid #5499C7"});
+           $("#xx").css({"background-color":"white", "margin-top":"200px" , "border":"10px double #5499C7"});
+           $("#eu").css({"background-color":"white", "margin-top":"200px" , "border":"10px double #5499C7"});
+
            $("#o1").toggle("1000"); 
            $("#o2").hide(); 
            $("#o3").hide();
@@ -56,15 +59,15 @@
 
 
     </head>
-    <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:black;
-     width: 100%; color: #5499C7; padding-left:200px; ">
+    
+ <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:black;  width: 100%; color: #5499C7; padding-left:200px; ">
       <a class="navbar-brand"id="size" href="#"><i class="fas fa-plane"></i></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-   <ul class="navbar-nav " style="padding-left:800px;">
+     <ul class="navbar-nav " style="padding-left:800px;">
           <li class="nav-item ">
             <a class="nav-link pl-3 font-weight-bold" id="home" href="home.html">Home <span class="sr-only">(current)</span></a>
           </li>
@@ -83,34 +86,25 @@
         </ul>
       </div>
     </nav>
-
-
-   <div class="jumbotron">
-       <h1 class="display-4 text-white any">ANY-WAY <i class="fas fa-globe-americas pp1 ci"></i><br><p>For Torism and Travle</p><p class="plane1"><img src="bootstrap-4.3.1-dist/img/plane2.png" class="pl"></p> 
+    <div class="jumbotron">
+      <h1 class="display-4 text-white any">ANY-WAY <i class="fas fa-globe-americas pp1 ci"></i><br><p>For Torism and Travle</p><p class="plane1"><img src="bootstrap-4.3.1-dist/img/plane2.png " class="pl"></p> 
   </h1>
       <p></p> 
     </div>
-     <div class="container AboutUs">
-      <div class="row yy">
-        <div class="col-sm ">
-        <img src="bootstrap-4.3.1-dist/img/relax.jpg" width="400" height="400">
-        </div>
-        <div class="col-sm">
-    <h1>ABOUT-US </h1><br>
-    <h5>We are a Jordanian company that strives to provide the best tourist services, which includes a comfortable and well-equipped travel method for all travelers, in addition to the excellent hotel services and the internal transport that follows to and from the airport, and do not forget the continuous offers. we are here to help you spend the best and mst enjoyable trips.Be near us to get continuous discount.</h5>
-        </div> 
-      </div>
-    </div>
-    <div class="container text-center">
+
+  <div class="container text-center">
        <div class="row" style="background-color: #5499C7; color: white;">
         <div class="col-sm p-3">
           <h1><i class="fas fa-plane SS"></i> Our-Distination</h1>
         </div>
        </div>
        <div class="row p-3">
-         <div class="col-md our m-3" id="far"><h1 >Far East</h1></div>
-         <div class="col-md our m-3" id="eu"><h1>Europe</h1></div>
-         <div class="col-md our m-3" id="xx"><h1>xxx</h1></div>
+         <div class="col-md our m-3 pointer" id="far"><h3 style="color: #5499C7;">Asia</h3></div>
+         <div class="col-md our m-3 pointer" id="eu"><h3 style="color: #5499C7;">Europe</h3></div>
+         <div class="col-md our m-3 pointer" id="xx"><h3 style="color: #5499C7;">winter dest..</h3></div>
+
+      
+
        </div>
       <div class="row mt-5" style="display: none;" id="o1">
      
@@ -119,10 +113,10 @@
           <h2>BANGKOK</h2>
               <h6 class="para">BANGKOK welcomes more visitors than any other city in the world and it doesn’t take long to realise why. Bangkok is a city of contrasts with action at every turn. Marvel at the gleaming temples, catch a tuk tuk through bustling Chinatown or take a longtail boat through floating markets</h6>
         </div>
-        <div class="col-sm">
-                <img src="bootstrap-4.3.1-dist/img/22.jpg"height="300" width="300"  alt="BANKOK">
-                  <h1>MALDEF-island</h1>
-              <h6 class="para">The Maldives officially the Republic of Maldives, is a small island nation in South Asia, located in the Arabian Sea. The chain of 26 atolls stretches from Ihavandhippolhu Atoll in the north to Addu Atoll in the south. Malé is the capital and the most populated city, traditionally called the "King's Island" for its central location.</h6>
+     <div class="col-sm " >
+                <img src="bootstrap-4.3.1-dist/img/ty.jpg"height="300" width="300" alt="BANKOK">
+                  <h1>THAILAND</h1>
+              <h6 class="para">The THAILAND officially the Republic of Maldives, is a small island nation in South Asia, located in the Arabian Sea. The chain of 26 atolls stretches from Ihavandhippolhu Atoll in the north to Addu Atoll in the south. Malé is the capital and the most populated city, traditionally called the "King's Island" for its central location.</h6>
 
         </div>
         <div class="col-sm">
@@ -138,20 +132,22 @@
       <div class="row mt-5" style="display: none;" id="o2">
      
         <div class="col-sm" >
-          <img src="bootstrap-4.3.1-dist/img/Lon.jpg" height="300" width="300"alt="BANKOK">
-          <h2>LONDON</h2>
-              <h6 class="para">LONDON welcomes more visitors than any other city in the world and it doesn’t take long to realise why. Bangkok is a city of contrasts with action at every turn. Marvel at the gleaming temples, catch a tuk tuk through bustling Chinatown or take a longtail boat through floating markets</h6>
+          <img src="bootstrap-4.3.1-dist/img/norway.jpg" height="300" width="300"alt="Norway">
+          <h1>BERGEN, Norway</h1>
+              <h6 class="para">The city of Bergen is located in Norway and is considered the city of European culture and one of the cities on the UNESCO World Heritage List. Bergen is famous for its bright buildings, charming coastlines and mountains covered with pine forests. If you love natural colors and open areas, Bergen is an ideal destination to spend your summer vacation, just don't forget to take your camera to commemorate your visit to this charming Norwegian city.</h6>
         </div>
         <div class="col-sm " >
-                <img src="bootstrap-4.3.1-dist/img/ty.jpg"height="300" width="300" alt="BANKOK">
-                  <h1>THAILAND</h1>
-              <h6 class="para">The THAILAND officially the Republic of Maldives, is a small island nation in South Asia, located in the Arabian Sea. The chain of 26 atolls stretches from Ihavandhippolhu Atoll in the north to Addu Atoll in the south. Malé is the capital and the most populated city, traditionally called the "King's Island" for its central location.</h6>
+                <img src="bootstrap-4.3.1-dist/img/colmar.jpg"height="300" width="300" alt="BANKOK">
+                  <h1>COLMAR, France</h1>
+              <h6 class="para">Colmar is located in France on the German and Swiss borders and is characterized by its charming rural character and its ideal atmosphere. The history of the city extends over 1000 years and Colmar is known for its water channels, colorful houses and charming nature. The city is also known as the birthplace of the international sculptor Bartholdi, the owner of the Statue of Liberty, which crowns New York City.</h6>
 
         </div>
         <div class="col-sm ">
-                <img src="bootstrap-4.3.1-dist/img/ger.jpg"height="300" width="300" alt="BANKOK">
-                    <h1>GERMANY</h1>
-              <h6 class="para">GERMANY is a country in Southeast Asia. The federal constitutional monarchy consists of 13 states and three federal territories,Peninsular Malaysia and East Malaysia (Malaysian Borneo). Peninsular Malaysia shares a land and maritime border with Thailand and maritime borders with Singapore, Vietnam, and Indonesia. </h6>
+                <img src="bootstrap-4.3.1-dist/img/Dresden-germany.jpg"height="300" width="300" alt="BANKOK">
+                    <h1>DRESDEN</h1>
+              <h6 class="para">Germany is proud of the city ​​of Dresden, the capital of technology, higher education and inventions. Dresden is located in the state of Saxony, also known as the "Florence River Elbe". The city combines its masterpieces, its magnificent architecture, and its high scientific level, and tourists come to Dresden in large numbers every year to see the tourist attractions in it, such as the Church of the Virgin and the Zwinger Palace and the Semper Oper Opera House.
+
+ </h6>
 
         </div>
       </div>
@@ -161,160 +157,26 @@
       <div class="row mt-5" style="display: none;" id="o3">
      
         <div class="col-sm" >
-          <img src="bootstrap-4.3.1-dist/img/Lon.jpg" height="300" width="300"alt="BANKOK">
-          <h2>LONDON</h2>
-              <h6 class="para">LONDON welcomes more visitors than any other city in the world and it doesn’t take long to realise why. Bangkok is a city of contrasts with action at every turn. Marvel at the gleaming temples, catch a tuk tuk through bustling Chinatown or take a longtail boat through floating markets</h6>
+          <img src="bootstrap-4.3.1-dist/img/russia.jpeg" height="300" width="300"alt="BANKOK">
+          <h2>RUSSIA</h2>
+              <h6 class="para">ussia's winter season begins from November to March, and during the season Russia opens its doors to visitors, offering new programs and shows every year, especially world-famous opera and ballet performances.You can also visit the large lake "Baikal", and during the winter the lake freezes completely with thick ice, making it a suitable place for skiing, in addition to many other interesting activities that you will not find in any second country in the world.</h6>
         </div>
         <div class="col-sm " >
-                <img src="bootstrap-4.3.1-dist/img/ty.jpg"height="300" width="300" alt="BANKOK">
-                  <h1>THAILAND</h1>
-              <h6 class="para">The THAILAND officially the Republic of Maldives, is a small island nation in South Asia, located in the Arabian Sea. The chain of 26 atolls stretches from Ihavandhippolhu Atoll in the north to Addu Atoll in the south. Malé is the capital and the most populated city, traditionally called the "King's Island" for its central location.</h6>
+                <img src="bootstrap-4.3.1-dist/img/finland.jpeg"height="300" width="300" alt="BANKOK">
+                  <h1>FINLAND</h1>
+              <h6 class="para"> In Finland, it is often darkness in the winter, because the sun does not rise in the morning and the darkness is more severe in northern Finland than it is in the south.Among its best tourist sites is the Levi region, which allows you to practice skiing amid a breathtaking landscape, the historic Tampere region and the city of Turku, which is the oldest city in Finland, and has many museums and archaeological sites dating back to the 13th century AD.</h6>
 
         </div>
         <div class="col-sm ">
-                <img src="bootstrap-4.3.1-dist/img/ger.jpg"height="300" width="300" alt="BANKOK">
-                    <h1>GERMANY</h1>
-              <h6 class="para">GERMANY is a country in Southeast Asia. The federal constitutional monarchy consists of 13 states and three federal territories,Peninsular Malaysia and East Malaysia (Malaysian Borneo). Peninsular Malaysia shares a land and maritime border with Thailand and maritime borders with Singapore, Vietnam, and Indonesia. </h6>
+                <img src="bootstrap-4.3.1-dist/img/tta.jpeg"height="300" width="300" alt="BANKOK">
+                    <h1>Thailand</h1>
+              <h6 class="para">Thailand is one of the best tourist destinations in the world, as the natural frigidity of this season turns into lounging sessions on stunning beaches in a large number of islands such as Phuket Island, Phi Phi Island, Ko Samui Island and Ko Phangan, and the best time to visit Thailand is between December December to February, and in some areas to May.</h6>
 
         </div>
       </div>
     </div>
-    <div class="container text-center mt-5">
-      <div class="row offers" style="background-color: #5499C7; color: white; ">
-        <div class="col-sm p-3">
-         <h1><i class="fas fa-plane SS"></i> OFFERS</h1>  
-        </div>
-        </div>
-    </div>
-   <div class="container text-center mt-5">
-      <div class="row ">
-        <div class="col-sm">
-          <div class="flip-card">
-              <div class="flip-card-inner">
-              <div class="flip-card-front">
-                  <img src="bootstrap-4.3.1-dist/img/bali.jpg" width="340" height="300" alt="BANKOK">
-                  <br><br>
-                  <h1>BALI</h1>
-                  <h1>20% Discount</h1>
-                  </div>
-                  <div class="flip-card-back">
-              <h2 class="hh"><br>Honeymoon offers ..<br></h2>
-                      <h4><br>* 6 days and 5 nights.</h4>
-                      <h4>* 5-star hotel, including breakfast.</h4>
-                      <h4>* Safe transportation to and from the airport.</h4>
-                      <h4>* Featured photographs.</h4>
-                      <i class="fas fa-plane"></i>  </div>
-                   </div>
-                   </div>
-        </div>
-        <div class="col-sm">
-           <div class="flip-card">
-              <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="bootstrap-4.3.1-dist/img/par.jpg" width="340" height="300" alt="BANKOK">
-
-                  <br><br>
-                  <h1>PARIS</h1>
-                  <h1>10% Discount</h1>
-                  </div>
-                  <div class="flip-card-back">
-              <h2 class="hh"><br>Honeymoon offers ..<br></h2>
-                      <h4><br>* 6 days and 5 nights.</h4>
-                      <h4>* 5-star hotel, including breakfast.</h4>
-                      <h4>* Safe transportation to and from the airport.</h4>
-                      <h4>* Featured photographs.</h4>
-                      <i class="fas fa-plane"></i>  </div>
-                   </div>
-                   </div>
-        </div>
-        <div class="col-sm">
-          <div class="flip-card">
-              <div class="flip-card-inner">
-              <div class="flip-card-front">
-              <img src="bootstrap-4.3.1-dist/img/ist.jpg" width="340" height="300" alt="BANKOK">
-                  <br><br>
-                  <h1>ISTANBUL</h1>
-                  <h1>35% Discount</h1>
-                  </div>
-                  <div class="flip-card-back">
-              <h2 class="hh"><br>Honeymoon offers ..<br></h2>
-                      <h4><br>* 6 days and 5 nights.</h4>
-                      <h4>* 5-star hotel, including breakfast.</h4>
-                      <h4>* Safe transportation to and from the airport.</h4>
-                      <h4>* Featured photographs.</h4>
-                      <i class="fas fa-plane"></i></div>
-                   </div>
-                   </div>
-                    </div>
-      </div>
-    </div>
-     <div class="container text-center mt-5">
-      <div class="row ">
-        <div class="col-sm">
-          <div class="flip-card">
-              <div class="flip-card-inner">
-              <div class="flip-card-front">
-                  <img src="bootstrap-4.3.1-dist/img/PETRA.jpg" width="340" height="300" alt="BANKOK">
-                  <br><br>
-                  <h1>PETRA-JORDAN</h1>
-                  <h1>40% Discount</h1>
-                  </div>
-                  <div class="flip-card-back">
-              <h2 class="hh"><br>Honeymoon offers ..<br></h2>
-                      <h4><br>* 6 days and 5 nights.</h4>
-                      <h4>* 5-star hotel, including breakfast.</h4>
-                      <h4>* Safe transportation to and from the airport.</h4>
-                      <h4>* Featured photographs.</h4>
-                      <i class="fas fa-plane"></i></div>
-                   </div>
-                   </div>
-        </div>
-        <div class="col-sm">
-           <div class="flip-card">
-              <div class="flip-card-inner">
-              <div class="flip-card-front">
-                               <img src="bootstrap-4.3.1-dist/img/MAKA.jpg" width="340" height="300" alt="BANKOK">
-
-                  <br><br>
-                  <h1>MAKA</h1>
-                  <h1>45% Discount</h1>
-                  </div>
-                  <div class="flip-card-back">
-              <h2 class="hh"><br>Honeymoon offers ..<br></h2>
-                      <h4><br>* 6 days and 5 nights.</h4>
-                      <h4>* 5-star hotel, including breakfast.</h4>
-                      <h4>* Safe transportation to and from the airport.</h4>
-                      <h4>* Featured photographs.</h4>
-                      <i class="fas fa-plane"></i>
-                   </div>
-                   </div>
-                   </div>
-        </div>
-        <div class="col-sm">
-          <div class="flip-card">
-              <div class="flip-card-inner">
-              <div class="flip-card-front">
-              <img src="bootstrap-4.3.1-dist/img/MARMARES.jpg" width="340" height="300" alt="BANKOK">
-                  <br><br>
-                  <h1>MARMARES</h1>
-                  <h1>35% Discount</h1>
-                  </div>
-                  <div class="flip-card-back">
-              <h2 class="hh"><br>Honeymoon offers ..<br></h2>
-                      <h4><br>* 6 days and 5 nights.</h4>
-                      <h4>* 5-star hotel, including breakfast.</h4>
-                      <h4>* Safe transportation to and from the airport.</h4>
-                      <h4>* Featured photographs.</h4>
-                      <i class="fas fa-plane"></i>
-                   </div>
-                   </div>
-                   </div>
-                    </div>
-      </div>
-    </div>
-   
-
-    <div class="ac mt-5">
+ 
+   <div class="ac mt-5">
     <div class="container text-center">
       <div class="row">
         <div class="col-4 mt-5 p-3">
@@ -345,5 +207,8 @@
         </div>
       </section>
     </footer>
-    </body>
+
+
+
+   </body>
     </html>
