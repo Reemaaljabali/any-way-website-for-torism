@@ -16,11 +16,11 @@
           <script type="text/javascript">
            $("document").ready(function() {
            $("#far").click(function(){
-          $("#far").css({"background-color":"white",  "border":"10px solid #5499C7"});
-            $("#xx").css({"background-color":"white", "border":"10px double #5499C7"});
-           $("#eu").css({"background-color":"white", "border":"10px double #5499C7"});
+          $("#far").css({"background-color":"white",  "border":"6px solid #5499C7"});
+            $("#xx").css({"background-color":"white", "border":"6px double #5499C7"});
+           $("#eu").css({"background-color":"white", "border":"6px double #5499C7"});
 
-           $("#in").css({"background-color":"white", "border":"10px double #5499C7"});
+           $("#in").css({"background-color":"white", "border":"6px double #5499C7"});
 
             $("#disp").css({"display":"none"});
 
@@ -34,10 +34,10 @@
 
   });
            $("#eu").click(function(){
-         $("#eu").css({"background-color":"white", "border":"10px solid #5499C7"});
-        $("#far").css({"background-color":"white", "border":"10px double #5499C7"});
-         $("#xx").css({"background-color":"white",  "border":"10px double #5499C7"});
-                    $("#in").css({"background-color":"white", "border":"10px double #5499C7"});
+         $("#eu").css({"background-color":"white", "border":"6px solid #5499C7"});
+        $("#far").css({"background-color":"white", "border":"6px double #5499C7"});
+         $("#xx").css({"background-color":"white",  "border":"6px double #5499C7"});
+                    $("#in").css({"background-color":"white", "border":"6px double #5499C7"});
 
                      $("#disp").css({"display":"none"});
 
@@ -51,10 +51,10 @@
 
   });
       $("#xx").click(function(){
-        $("#xx").css({"background-color":"white", "border":"10px solid #5499C7"});
-        $("#far").css({"background-color":"white", "border":"10px double #5499C7"});
-         $("#eu").css({"background-color":"white",  "border":"10px double #5499C7"});
-                    $("#in").css({"background-color":"white", "border":"10px double #5499C7"});
+        $("#xx").css({"background-color":"white", "border":"6px solid #5499C7"});
+        $("#far").css({"background-color":"white", "border":"6px double #5499C7"});
+         $("#eu").css({"background-color":"white",  "border":"6px double #5499C7"});
+                    $("#in").css({"background-color":"white", "border":"6px double #5499C7"});
 
                      $("#disp").css({"display":"none"});
 
@@ -69,21 +69,31 @@
 
   });
      $("#in").click(function(){
-        $("#in").css({"background-color":"white", "border":"10px solid #5499C7"});
-        $("#far").css({"background-color":"white", "border":"10px double #5499C7"});
-         $("#eu").css({"background-color":"white",  "border":"10px double #5499C7"});
-          $("#xx").css({"background-color":"white",  "border":"10px double #5499C7"});
-
+        $("#in").css({"background-color":"white", "border":"6px solid #5499C7"});
+        $("#far").css({"background-color":"white", "border":"6px double #5499C7"});
+         $("#eu").css({"background-color":"white",  "border":"6px double #5499C7"});
+          $("#xx").css({"background-color":"white",  "border":"6px double #5499C7"});
           $("#disp").css({"display":"none"});
           $("#o4").toggle("1000"); 
          $("#o3").hide(); 
            $("#o2").hide(); 
            $("#o1").hide();
-
-           
- 
-
-  });      
+  }); 
+  var top = $('#topp');
+    top.hide();
+  
+    $(window).scroll(function() {
+      if ($(window).scrollTop() > 2200) {
+       top.show();
+      } else {
+       top.hide();
+      }
+    });
+  
+    top.on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({scrollTop:0}, '2200');
+    });      
                });
 
             
@@ -107,10 +117,10 @@
             <a class="nav-link pl-3 font-weight-bold" id="home" href="home.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link pl-3 font-weight-bold" id="home" href="AboutUs2.html">AboutUs</a>
+            <a class="nav-link pl-3 font-weight-bold" id="home" href="AboutUs2.html">About-Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link pl-3 font-weight-bold" id="home" href="Our-Distination.html"> Distination</a>
+            <a class="nav-link pl-3 font-weight-bold" id="home" href="Our-Distination.html"> Destination</a>
           </li>
            <li class="nav-item">
             <a class="nav-link pl-3 font-weight-bold" id="home" href="Offers.html"> Offers</a>
@@ -120,7 +130,7 @@
             <a class="nav-link pl-3 font-weight-bold" id="home" href="hotel.html">Hotel</a>
           </li>
             <li class="nav-item">
-            <a class="nav-link pl-3 font-weight-bold" id="home" href="ContactUs.html"> ContactUs</a>
+            <a class="nav-link pl-3 font-weight-bold" id="home" href="ContactUs.html"> Contact-Us</a>
           </li>
         </ul>
       </div>
@@ -140,24 +150,18 @@
         <div class="row">
        
           <div class="col mt-4 ">
-          <img class="bed" width="200px" height="200px"  src="bootstrap-4.3.1-dist/img/destination-1.jpg"></div>
+          <img class="bed hover01" width="200px" height="200px"  src="bootstrap-4.3.1-dist/img/destination-1.jpg"></div>
             <div class="col mt-4 ">
-          <img class="bed" width="200px" height="200px"  src="bootstrap-4.3.1-dist/img/destination-5.jpg"></div>
+          <img class="bed hover01" width="200px" height="200px"  src="bootstrap-4.3.1-dist/img/destination-5.jpg"></div>
             <div class="col mt-4 ">
-          <img class="bed" width="200px" height="200px"  src="bootstrap-4.3.1-dist/img/destination-3.jpg"></div>
+          <img class="bed hover01" width="200px" height="200px"  src="bootstrap-4.3.1-dist/img/destination-3.jpg"></div>
           <div class="col mt-4 ">
-          <img class="bed" width="200px" height="200px"  src="bootstrap-4.3.1-dist/img/destination-2.jpg"></div>
+          <img class="bed hover01" width="200px" height="200px"  src="bootstrap-4.3.1-dist/img/destination-2.jpg"></div>
            <div class="col mt-4 ">
-          <img class="bed" width="200px" height="200px"  src="bootstrap-4.3.1-dist/img/destination-6.jpg"></div>
+          <img class="bed hover01" width="200px" height="200px"  src="bootstrap-4.3.1-dist/img/destination-6.jpg"></div>
           </div>
         </section>
-        <section>
-          <div class="row">
-            <div class="col">
-              
-            </div>
-          </div>
-        </section>
+       
   
       <section>
         <div class="row">
@@ -165,22 +169,23 @@
       <h4 class="text-info " style="margin-top: 200px;"> BEST DESTINATION<i class="fas fa-plane SS"></i></h4>
       <h1 class="text-dark"  style="margin-top: 20px;">Best Place to Travel In 2020</h1>
       </section>
- <div class=" row text-center p-5 " style="width: 1200px; margin-left: 280px;">
-    <div class="col our " id="far"><h3 style="color: #5499C7; width: 150px; margin-top: 15px; margin-left: 30px;">Asia</h3></div>
-    <div class="col our " id="eu"><h3 style="color: #5499C7; width: 150px;margin-top: 15px; margin-left: 30px;">Europe</h3></div>
-    <div class="col our " id="xx"><h3 style="color: #5499C7;width: 200px;">winter destination</h3></div>
-    <div class="col our " id="in"><h3 style="color: #5499C7; width: 180px;margin-top: 15px;">internal travel</h3></div>
+ <div class=" row text-center p-5 container" style="margin-left: 250px;">
+    <div class="col-sm our pointer " id="far"><h3 style="color: #5499C7;  margin-top: 15px;
+   cursor: pointer;">Asia</h3></div>
+    <div class="col-sm our pointer " id="eu"><h3 style="color: #5499C7; margin-top: 15px;cursor: pointer; ">Europe</h3></div>
+    <div class="col-sm our pointer " id="xx"><h3 style="color: #5499C7;margin-top: 15px;cursor: pointer;">winter destination</h3></div>
+    <div class="col-sm our pointer" id="in"><h3 style="color: #5499C7; margin-top: 15px;cursor: pointer;">internal travel</h3></div>
     
     <section id="disp">
       <div class="row mt-5 ml-5 ">
-        <div class="col hover11"><img width="300px" height="300px" style="transform: rotate(90deg);" src="bootstrap-4.3.1-dist/img/destination-10.jpg"></div>
-        <div class="col hover11"><img width="300px" height="300px"  src="bootstrap-4.3.1-dist/img/destination-9.jpg"></div>
-        <div class="col hover11"><img width="300px" height="300px" src="bootstrap-4.3.1-dist/img/destination-8.jpg"></div>
+        <div class="col-sm hover11"><img width="300px" height="300px" style="transform: rotate(90deg);" src="bootstrap-4.3.1-dist/img/destination-10.jpg"></div>
+        <div class="col-sm hover11"><img width="300px" height="300px"  src="bootstrap-4.3.1-dist/img/destination-9.jpg"></div>
+        <div class="col-sm hover11"><img width="300px" height="300px" src="bootstrap-4.3.1-dist/img/destination-8.jpg"></div>
         </div> 
        <div class="row mt-5 ml-5">
-      <div class="col hover11"><img width="300px" height="300px" src="bootstrap-4.3.1-dist/img/destination-7.jpg"></div>
-         <div class="col hover11"><img width="300px" height="300px" src="bootstrap-4.3.1-dist/img/w3.jpg"></div>
-            <div class="col hover11"><img width="300px" height="300px" src="bootstrap-4.3.1-dist/img/destination-12.jpg"></div>
+      <div class="col-sm hover11"><img width="300px" height="300px" src="bootstrap-4.3.1-dist/img/destination-7.jpg"></div>
+         <div class="col-sm hover11"><img width="300px" height="300px" src="bootstrap-4.3.1-dist/img/w3.jpg"></div>
+            <div class="col-sm hover11"><img width="300px" height="300px" src="bootstrap-4.3.1-dist/img/destination-12.jpg"></div>
       </div>
     </section>
 
@@ -335,6 +340,8 @@
 
 
     </section>
+        <a id="topp"><i class="fas fa-angle-double-up"></i></a>
+
  
    <div class="ac mt-5">
     <div class="container text-center">

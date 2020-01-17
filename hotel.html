@@ -15,13 +15,31 @@
          <script type="text/javascript" src="jquery.js"></script>
          <script type="text/javascript">
            $("document").ready(function() {
+
            $("#hotel1").click(function(){
            	$("#hotel1-1").toggle(1000);  });
 
             $("#hotel2").click(function(){
            	$("#hotel2-2").toggle(1000);  });
+             var top = $('#topp');
+    top.hide();
+  
+    $(window).scroll(function() {
+      if ($(window).scrollTop() > 2200) {
+       top.show();
+      } else {
+       top.hide();
+      }
+    });
+  
+    top.on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({scrollTop:0}, '2200');
+    });      
+               });
 
-  });
+
+
          </script>
 </head>
 <body>
@@ -38,10 +56,10 @@
             <a class="nav-link pl-3 font-weight-bold" id="home" href="home.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link pl-3 font-weight-bold" id="home" href="AboutUs2.html">AboutUs</a>
+            <a class="nav-link pl-3 font-weight-bold" id="home" href="AboutUs2.html">About-Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link pl-3 font-weight-bold" id="home" href="Our-Distination.html"> Distination</a>
+            <a class="nav-link pl-3 font-weight-bold" id="home" href="Our-Distination.html"> Destination</a>
           </li>
            <li class="nav-item">
             <a class="nav-link pl-3 font-weight-bold" id="home" href="Offers.html"> Offers</a>
@@ -51,7 +69,7 @@
             <a class="nav-link pl-3 font-weight-bold" id="home" href="hotel.html">Hotel</a>
           </li>
             <li class="nav-item">
-            <a class="nav-link pl-3 font-weight-bold" id="home" href="ContactUs.html"> ContactUs</a>
+            <a class="nav-link pl-3 font-weight-bold" id="home" href="ContactUs.html"> Contact-Us</a>
           </li>
         </ul>
       </div>
@@ -71,8 +89,8 @@
     	<div class="row ml-5">
     		<div class="col-md">
     			<img id="hotel1" class="hover01" width="600px" height="400px"  src="bootstrap-4.3.1-dist/img/hotel-1.jpg">
-    			<div class="row ml-3" style="width: 100px;height:50px; background-color:#ebebe0;">
-    			<p class="pt-3">$500->$400</p></div>
+    			<div class="row ml-3" style="width: 130px;height:50px; background-color:#ebebe0;">
+    			<h5 class="pt-3"><del>$500</del>/ <b>$400</b></h5></div>
     			<div class="row ml-3"><h3>Luxury Hotel in Greece</h3></div>
     			<div class="row ml-3"><h5>
     				<i class="far fa-star"></i>
@@ -91,8 +109,8 @@
 
     		<div class="col-md ml-5">
     				<img id="hotel2" class="hover01" width="600px" height="400px"  src="bootstrap-4.3.1-dist/img/hotel-3.jpg">
-    			<div class="row ml-3" style="width: 100px;height:50px; background-color:  #ebebe0;">
-    			<p class="pt-3">$500->$400</p></div>
+    			<div class="row ml-3" style="width: 130px;height:50px; background-color:  #ebebe0;">
+    			<h5 class="pt-3"><del>$500</del>/ <b>$400</b></h5></div>
     			<div class="row ml-3"><h3>Luxury Hotel in France</h3></div>
     			<div class="row ml-3"><h5>
     				<i class="far fa-star"></i>
@@ -107,7 +125,7 @@
     			<img class="ml-5 mt-4" width="200px" height="200px"  src="bootstrap-4.3.1-dist/img/h5.jpg">
     		</div>
     		</div>
-	    		<div class="col-md ml-5">
+	    		<div class="col-md mt-4">
 	    			<div class="row ">
 	    			<img class="bed" width="200px" height="200px"  src="bootstrap-4.3.1-dist/img/hotel-4.jpg"></div>
 	    				<div class="row mt-4">
@@ -150,6 +168,7 @@
 	
 </section>
 
+        <a id="topp"><i class="fas fa-angle-double-up"></i></a>
 
     <div class="ac mt-5">
     <div class="container text-center">
