@@ -9,6 +9,7 @@
 	#home:hover{
 		border-bottom: 6px solid #5499C7;	}
 	.jumbotron{background-image: url("../img/2.jpg");
+	background-repeat: no-repeat;
 		height: 500px;}
 		.any{ margin: 30px; }
 	.AboutUs{padding: 40px;
@@ -72,7 +73,6 @@
 		}
 		.SS{transform: rotate(330deg);}
 		.pl{
-
 			animation-name:pll;
 			animation-duration: 15s;
 			animation-delay: 0.3s;
@@ -109,7 +109,7 @@ figure {
 	transition: .3s ease-in-out;
 }
 .hover01:hover {
-	-webkit-transform: scale(1.2);
+	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 }
 /* Rotate */
